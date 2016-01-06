@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+ <style>
+  .cutoff {
+  width: 100%;
+  height: 180px;
+  background-position: bottom;
+  overflow: hidden;
+  align: center;
+}
+ .column-left{ float: left; width: 33%; }
+.column-right{ float: right; width: 33%; }
+.column-center{ display: inline-block; width: 33%; }
+   
+    </style>   
+    
+    <head>
+    <h1 style="text-align:center;"> Welcome to this homepage</h1>
+    
+</head>
+
+<body>
+
+ <div class="body" style="color: #ffffff;">
+ 
+    <h1 style="color: #ffffff;  text-align: center;">Join the project today</h1>
+        <br>
+        <br>
+        <%= link_to 'About', about_path %>
+        <br>
+        <br>
+        
+        
+    <div class="row bg-grey">
+        <div class="column-left text-center" >
+             
+						<h3>Australian owned and operated</h3>
+						<p>Lots of stuff here</p>
+					
+				</div>
+            
+				 <div class="column-center text-center" >
+             
+						<h3>Call us</h3>
+						<p>0412 345 678</p>
+					
+				</div>
+            
+        <div class="column-right text-center" >
+             	<h3>Or email us</h3>
+                    <p> <a href="mailto:examplerails@email.com">examplerails@email.com</a></p>
+					
+				</div>
+			
+   </div>
+</div>   
+</body>
+ 
+<footer>
+    <div class="footer-1-3 small bg-grey">
+    
+    <h6 style="color:#ffffff; text-align: center; "><span class="fa fa-copyright"></span> Copyright me 2016</h6>
+
+  </div>
+</footer>
+
+</html>

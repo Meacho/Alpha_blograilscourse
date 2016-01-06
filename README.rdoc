@@ -1,0 +1,3 @@
+== README
+
+This is the readme file for the alpha_blogg app as part of the ruby on rails course from udemy
