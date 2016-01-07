@@ -7,9 +7,23 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div id="wrapper">
+  <%= render 'layouts/navigation' %>
   <%= render 'layouts/msgs' %>
 
-  <%= yield %>
 
+
+  <%= yield %>
+    <div class="container">
+    </div>
+    
+    <div id="footer"> 
+      <%= render 'layouts/footer' %>
+    </div>
+ 
+  </div>
 </body>
+
+
+
 </html>
