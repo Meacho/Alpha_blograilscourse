@@ -13,9 +13,8 @@
 .column-right{ float: right; width: 33%; }
 .column-center{ display: inline-block; width: 33%; }
 .body {
-    background-image: asset-url("star-sky.jpg");
-    background: url('/assets/star-sky.jpg');
-   background: url('star-sky.jpg'); }
+  <%= image_tag "/assets/images/star-sky.jpg" %>
+
     </style>   
     
     <head>
@@ -30,7 +29,8 @@
     <h1 style="color: #ffffff;  text-align: center;">Join the project today</h1>
         <br>
         <br>
-        <%= link_to 'About', about_path %>
+        <%= link_to 'About', about_path %> |
+        <%= link_to 'Alpha Blog', articles_path %>
         <br>
         <br>
         
