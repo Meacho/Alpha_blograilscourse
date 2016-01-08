@@ -41,28 +41,45 @@ $navbar-default-bg: #123456;
   font-size: 1.7em;
 }
 
-.footer {
+.article-actions {
+  border-top: 1px #eaeaea solid;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
+}
+.article-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.article-body {
+  border-top: 1px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #777777;
 }
 
-.footer a:hover {
+footer a:hover {
   color: #222222;
   
 }
 
-.footer small {
+footer small {
   float: left;
 }
 
-.footer ul {
+footer ul {
   float: right;
   list-style: none;
 }
 
-.footer ul li {
+footer ul li {
   float: left;
   margin-left: 15px;
 }
