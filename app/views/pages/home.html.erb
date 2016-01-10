@@ -22,7 +22,13 @@
 <div class="center jumbotron">
   <h1>Alpha Blog</h1>
   <br>
-  <%= link_to 'Signup now', "#", class: "btn btn-primary btn-lg btn-xlarge" %> </br><p></p>
+ <% if !logged_in? %>
+  <%= link_to 'Signup now', signup_path, class: "btn btn-primary btn-lg btn-xlarge" %> <br><p>
+    
+  </p>
+  <%= link_to 'Log in', login_path, class: "btn btn-primary btn-lg btn-xlarge" %> </br><p></p>
+  
+  <% end %>
   <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 </div>
 
