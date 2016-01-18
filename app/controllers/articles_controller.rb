@@ -40,6 +40,7 @@ class ArticlesController < ApplicationController
    end
 
   def show
+  
   end
   
   def destroy
@@ -50,13 +51,15 @@ class ArticlesController < ApplicationController
   
   
   private
-  def article_params
-  params.require(:article).permit(:title, :description)
+    
+    def article_params
+      params.require(:article).permit(:title, :description, category_ids: [])
   
-  end
+  
+    end
   
   def set_article
-    @article = Article.find(params[:id] )
+    @article = Article.find(params[:id])
   end
   
   def require_same_user
